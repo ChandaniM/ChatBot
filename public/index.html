@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="chat-title">
+          <div class="container"> 
+              <div class="image-container">
+                   <img src="./Images/Logo.jpg">
+              </div>
+                <span class="chat-name">Cloud Counselage</span>
+          </div>
+    </div>
+      <div class="chat-section">
+        <div class="container">
+          <ul id="messages">
+            
+          </ul>
+        </div>
+      </div> 
+      <div class="typing-section">
+          <div class="container">
+            <input id="m" placeholder="Please ask your Quries here!!!" autocomplete="off" />
+            <button id="button">Send</button>
+          </div>
+      </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
