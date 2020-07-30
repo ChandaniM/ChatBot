@@ -26,7 +26,7 @@ else if(/^[0-9]+[a-z]$/.test(msg)){
 io.to(socket.id).emit('chat message',val);
 }
     else if(message[msg]===undefined || message[msg]===null){
-      io.to(socket.id).emit('chat message','Sorry the query you\'re looking for does\'nt exist');
+      io.to(socket.id).emit('chat message','Sorry the query you\'re looking for doesn\'t exist');
     }
     
     else{
